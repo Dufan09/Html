@@ -7,7 +7,7 @@
         body{
             background-color:#d2b48c;
             margin-left: 20%;
-            margin-right: 30%;
+            margin-right: 20%;
             border: 2px dotted black;
             padding:10px 10px 10px 10px;
             font-family: sans-serif;
@@ -15,7 +15,7 @@
         }
         h1{
             font-size: 150%;
-            color: red;
+            color: olive;
             font-weight: bold;
             text-decoration: underline;
         }
@@ -26,8 +26,11 @@
         } 
         ol.c {
             list-style-type: upper-roman;
-            font-size: 120%;
         }  
+        ol{
+            font-size: 120%;
+            color: teal;
+        }
         a:link {color:#FF0000;}    
         a:visited {color:#00FF00;} 
         a:hover {color:#FF00FF;}   
@@ -39,9 +42,16 @@
             width: 500px;   
             padding-top: 0.5em;   
             padding-bottom: 0.3em;   
-            padding-left: 0.8em;   
+            padding-left: 10px;   
             padding-right: 0.6em; 
-            line-height: 1.5em;  
+            line-height: 1.5em; 
+            border-radius: 15px; 
+            border-color: gray;
+            color: black;
+        }
+        #guarantee{
+            font-style: italic;
+            color: red;
         }   
     </style>
 </head>
@@ -50,7 +60,7 @@
     <h1>Starbuzz Coffee Beverages</h1>
 
     <li><h2>House Blend, &lt$1.49&gt</h2></li>
-        <p>A smooth, mild blend of coffees from Mexico, Bolivia and 
+        <p id="guarantee">A smooth, mild blend of coffees from Mexico, Bolivia and 
 Guatemala.</p>
 
     <li><h2>Mocha Caffe Latte,&lt$2.35&gt</h2></li>
