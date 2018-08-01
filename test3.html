@@ -2,18 +2,35 @@
 <html>
 <head>
 <style>
-table  {border:4px double black;
+table  {border:8px double black;
     border-collapse: collapse;
     border-color: blue;
 }
 th,  td {
-    padding: 4px;
+    padding: 35px;
     color: black;
 }
-span{text-decoration: underline;font-style: italic;}
+    caption{font-size: 40px;}
+    span{text-decoration: underline;font-style: italic;}
+    #footer{font-size: 50%;text-align: center;line-height: normal;margin-top: 40px;}
+    #container{
+    	width:800px;
+    	display:inline-block;
+    	padding-left: 20px; 
+    	text-align: center;
+    	border-width: thin;
+	    background-color:#EEEEEE;
+	    font-size: 20px;
+	}
+	a:link {color: #007e7e;}
+	a:active {color:#0000FF;}
 </style>
 </head>
 <body>
+	<div id="container">
+	<head>
+		<title>table</title>
+	</head>
     <table  border="1">
         <caption><font color="#FFA500">Results of Survey</caption>
         <colgroup id="colgroup1">
@@ -52,9 +69,16 @@ span{text-decoration: underline;font-style: italic;}
         </tbody>
         <tfoot>
             <tr>
-                <th colspan="7"><font color="blue">Data <span>Enterprises</span></th>
+                <th colspan="7"><font color="blue">Data <a href="test3.html"> <span>Enterprises</span></a></th>
+
             </tr>
         </tfoot>
     </table>
+        <div id="footer">
+		<p>
+			@Enterprises
+		</p>
+	    </div>
+	</div>
 </body>
 </html>
