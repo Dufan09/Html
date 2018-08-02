@@ -7,17 +7,44 @@
             padding: 4px; 
             background-color: gray;
         } 
+        .main {
+            border-width: thin;
+            border-style: solid; 
+            padding: 100px;
+            float:left;
+        }
+        .input{
+            text-align: right;
+            margin-bottom: 5px;
+        }
+        form{text-align: center;}
+        h2  {text-align: center;}
+        .link{font-size: 30px;}
 }
         </style> 
     </head> 
     <body> 
+        <div class="main"> 
+            <div class="link">
+            <ol> 
+            <li><a href="default.asp">Home</a></li> 
+            <li><a href="news.asp">News</a></li> 
+            <li><a href="contact.asp">Contact</a></li> 
+            <li><a href="about.asp">About</a></li> 
+            </ol> 
+            </div>
         <form> 
-            Name: <input type="text" name="name"/> 
-            <p/> 
-            City: <input type="text" name="city"/> 
-            <p/> 
-            <input type="submit"/> 
+            <div class="input">
+            	Name: <input type="text" name="name"/> 
+                <br> 
+                City: <input type="text" name="city"/> 
+                <br>
+            </div>
+                <input type="submit"/> 
         </form> 
-        <p>w3cschool.cn</p>
+        <h2>
+        <a href="w3cschool.com">w3cschool </a>
+        </h2>
+        </div>
     </body> 
 </html>
