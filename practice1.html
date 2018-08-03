@@ -3,34 +3,39 @@
   <meta charset="utf-8">
   <title>下拉菜单</title>
   <style type="text/css">
-    .dropdown{display: inline-block;}
-    .dropdown-content{display: none;}
+    .dropdown{display: inline-block;float: left;text-align: center;}
+    .dropdown-content{display: none;text-align: right;}
     .dropdown:hover .dropdown-content {display: block;}
+    .dropbtn{float: left;background-color: white;border: 0px;}
+    .main{border: 1px solid red; text-align: center;}
+    h2{position: static;
+      margin-top: 10px;
+      margin-left: 100px;
+      text-align: center;
+    }
     ul{
       list-style-type:none;
       margin:0;
       padding:0;
       overflow:hidden;
       }
-    li{
-        float:left;
-      }
+      li{float: left;}
   </style>
 </head>
 <body>
   <div class="main">
     <ul>
-    <h2>菜单</h2>
-    <h2>导航</h2>
-    <h2>附录</h2>
-    </ul>
+    <li><h2>菜单&nbsp; </h2></li>
+    <li><h2>导航&nbsp; </h2></li>
+    <li><h2>附录&nbsp; </h2></li>
     <div class="dropdown">
-      <button class="dropbtn">下拉菜单</button>
+      <button class="dropbtn"><h2>下拉菜单</h2></button>
       <div class="dropdown-content">
         <p>目录</p>
         <p>内容一</p>
         <p>内容二</p>
       </div>
     </div>
+    </ul>
   </div>
 </body>
